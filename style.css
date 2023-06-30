@@ -2,5 +2,7 @@ body{
     font-family: Roboto;
 }
 .cover{
-    background-image: url(/restaurant-menu/images/cover);
+    background-image: url(/images/cover.jpeg);
+    background-size: cover;
+    background-position: center;
 }
