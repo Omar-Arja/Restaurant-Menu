@@ -1,8 +1,159 @@
-body{
-    font-family: Roboto;
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 58px;
 }
-.cover{
-    background-image: url(/restaurant-menu/images/cover.jpeg);
-    background-size: cover;
-    background-position: center;
+
+body {
+    font-family: "Open Sans", "Roboto", sans-serif;
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+  }
+  
+.logo img{
+    height: 32px;
+    object-fit: contain;
+    float: left;
+    margin: 10px 7%;
+}
+
+nav{
+    overflow: hidden;
+}
+.nav{
+    background-color: rgba(18, 25, 44, 1);
+    width: 100%;
+    height: 58px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav span img{
+    height: 32px;
+    object-fit: fill;
+    float: right;
+    margin: 10px 7%;
+    border: 1px solid #f1ee23;
+    border-radius: 10%;
+    padding: 2px 8px;
+}
+
+.dropdown-Menu ul{
+    display: none;
+    position: relative;
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+    background-color: #12192c;
+    max-height: 520%;
+    overflow-y: auto;
+    top: 0;
+}
+
+.nav a:active ~ .dropdown-Menu ul{
+    display: block;
+}
+
+nav:hover .dropdown-Menu ul{
+    display: block;
+}
+.dropdown-Menu ul:hover{
+    display: block;
+}
+
+.dropdown-Menu li{
+    text-decoration: none;
+}
+
+.dropdown-Menu li a{
+    font-size: large;
+    padding: 5px;
+    color:#f1ee23;
+    background-color: rgba(18, 25, 44, 1);
+    text-decoration: none;
+    display: block;
+    margin: 10px 2.5%;
+    letter-spacing: 1.3px;
+    z-index: 9999;
+}
+
+.container{
+    justify-content: center;
+    margin: 20px 6%;
+}
+
+
+.category {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    padding: 0px 10px;
+    font-family: "Roboto", sans-serif;
+    height: auto;
+}
+
+.category h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #f1ee23;
+    background-color: #12192c;
+    padding: 15px;
+    margin-top: 1%;
+    letter-spacing: 3px;
+}
+
+.category h4{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 16.2px;
+}
+
+.item h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: dotted 1px black;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.item h5{
+    float: right;
+    position: relative;
+    top: -55px;
+    right: 10px;
+}
+
+.item h6{
+    color: #6c7880;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    top: -26px;
+}
+
+.item{
+    margin-bottom: -55px;
+    overflow: hidden;
+    position: relative;
+    top: -30px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: #12192c;
+    overflow: hidden;
+    position: sticky;
+    bottom: 0;
+    padding : 18px 0;
+}
+
+footer a{
+    font-weight: normal;
+    background-color: #12192c;
+    text-decoration: none;
+    color: #f1ee23;
+    margin:0 auto;
 }
