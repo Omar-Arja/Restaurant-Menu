@@ -20,6 +20,7 @@ body {
 nav{
     overflow: hidden;
 }
+
 .nav{
     background-color: rgba(18, 25, 44, 1);
     width: 100%;
@@ -27,6 +28,10 @@ nav{
     position: sticky;
     top: 0;
     z-index: 9999;
+}
+
+.nav span img:hover{
+    border: 1px solid white;
 }
 
 .nav span img{
@@ -54,7 +59,6 @@ nav{
 .nav a:active ~ .dropdown-Menu ul{
     display: block;
 }
-
 nav:hover .dropdown-Menu ul{
     display: block;
 }
