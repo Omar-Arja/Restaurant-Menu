@@ -90,7 +90,6 @@ nav:hover .dropdown-Menu ul{
     display: flex;
     flex-flow: column nowrap;
     width: 86.9vw;
-    justify-content: center;
     margin: 25px auto;
     margin-bottom: 0;
 }
@@ -105,7 +104,6 @@ nav:hover .dropdown-Menu ul{
     border: 1px solid black;
     padding: 0px 10px;
     font-family: "Roboto", sans-serif;
-    height: auto;
 }
 
 .category h1{
