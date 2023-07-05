@@ -5,7 +5,7 @@ html{
 
 body {
     font-family: "Open Sans", "Roboto", sans-serif;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     width: 100%;
   }
@@ -41,7 +41,7 @@ nav{
     margin: 10px 7%;
     border: 1px solid #f1ee23;
     border-radius: 10%;
-    padding: 2px 8px;
+    padding: 2px 10px;
 }
 
 .dropdown-Menu ul{
@@ -59,9 +59,11 @@ nav{
 .nav a:active ~ .dropdown-Menu ul{
     display: block;
 }
+
 nav:hover .dropdown-Menu ul{
     display: block;
 }
+
 .dropdown-Menu ul:hover{
     display: block;
 }
@@ -71,26 +73,34 @@ nav:hover .dropdown-Menu ul{
 }
 
 .dropdown-Menu li a{
-    font-size: large;
+    font-size: 18px;
+    font-weight: lighter;
     padding: 5px;
     color:#f1ee23;
     background-color: rgba(18, 25, 44, 1);
     text-decoration: none;
     display: block;
-    margin: 10px 2.5%;
+    margin-top: 0;
+    margin: 12px 2.5%;
     letter-spacing: 1.3px;
     z-index: 9999;
 }
 
 .container{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 86.9vw;
     justify-content: center;
-    margin: 20px 6%;
+    margin: 25px auto;
+    margin-bottom: 0;
 }
 
 
 .category {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 50px;
     border: 1px solid black;
     padding: 0px 10px;
@@ -99,18 +109,19 @@ nav:hover .dropdown-Menu ul{
 }
 
 .category h1{
-    font-size: 20px;
+    font-size: 21px;
     text-transform: uppercase;
     color: #f1ee23;
     background-color: #12192c;
-    padding: 15px;
+    padding: 15px 17;
     margin-top: 1%;
     letter-spacing: 3px;
 }
 
 .category h4{
     text-align: center;
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     font-size: 16.2px;
 }
 
@@ -151,7 +162,7 @@ footer{
     overflow: hidden;
     position: sticky;
     bottom: 0;
-    padding : 18px 0;
+    padding : 20px 0;
 }
 
 footer a{
