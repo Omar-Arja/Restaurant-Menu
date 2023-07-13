@@ -10,9 +10,9 @@
     <header class="nav">
         <nav>
         <div class="logo"><img src="/Restaurant-Menu/assets/images/logo.png" alt="logo"></div>
-            <a href="#dropdown-Menu"><span><img src="/Restaurant-Menu/assets/images/svg.svg" alt="icon"></span></a>
-            <div id="dropdown-Menu" class="dropdown-Menu">
-                <ul>
+            <a href="#dropdown-Menu"><img id="toggle" class="toggle-menu" src="/Restaurant-Menu/assets/images/svg.svg" alt="icon"></a>
+            <div>
+                <ul id="dropdown-Menu" class="dropdown-Menu">
                     <li><a href="#chicken">Chicken</a></li>
                     <li><a href="#beef">Beef</a></li>
                     <li><a href="#smashed">Smashed</a></li>
@@ -30,7 +30,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div id="cont" class="container">
         <section id="chicken" class="category">
             <h1>chicken</h1>
             <h4>Make it a meal +$5</h4>
@@ -401,5 +401,6 @@
     <footer>
         <a href="https://bimpos.com/contactless-digital-menu-from-app" target="_blank">Powered by BIM POS</a>
     </footer>
+    <script src="/assets/script.js"></script>
 </body>
 </html>
